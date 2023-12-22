@@ -55,6 +55,9 @@
           <li class="megamenu-fw"> <a href="services.html">Services</a></li>
           <li class="megamenu-fw"> <a href="faqs.html">FAQ</a></li>
           <li class="megamenu-fw"> <a href="contact.html">Contact us</a></li>
+
+          <div id="WAButton"></div>
+
         </ul>
       </div>
       <!--=== /.navbar-collapse ===-->
@@ -434,7 +437,7 @@
   <!--=== Our Team End ===-->
 
   <!--=== Clients Start ======-->
-  <!-- <section class="pt-50 pb-50 white-bg" id="testi-bg">
+  <section class="pt-50 pb-50 white-bg" id="testi-bg">
     <div class="container">
       <div class="row">
         <div id="client-slider" class="owl-carousel">
@@ -451,7 +454,8 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
   <!--=== Clients End ======-->
 
   <!--=== Footer Start ======-->
@@ -538,6 +542,34 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/master.js"></script>
 <script src="assets/js/bootsnav.js"></script>
+
+
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+  <!--Floating WhatsApp javascript-->
+  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+  
+  <script>
+  $(function() {
+    $('#WAButton').floatingWhatsApp({
+      phone: '+918459872341', //WhatsApp Business phone number International format-
+      headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+      popupMessage: 'Hello, how can we help you?', //Popup Message
+      showPopup: true, //Enables popup display
+      buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+      headerColor: '#ce1500', //Custom header color
+      //backgroundColor: 'crimson', //Custom background button color
+      showOnIE: true,
+      showPopup: true,
+      showOnIE: false,
+      headerTitle: 'Welcome to BCatalyst!',
+      position: "left"    
+    });
+  });
+  </script>
+
 <!--=== Javascript Plugins End ======-->
 
 <!-- Revolution js Files -->
@@ -553,6 +585,9 @@
 <script src="revolution/js/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/revolution.extension.video.min.js"></script>
 <!--== Javascript Plugins End ==-->
+
+
+
 
 <script>
 var revapi1078,
